@@ -1,0 +1,11 @@
+{
+  "usingComponents": {},
+
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2b0a30",
+    "navigationBarTitleText": "塔罗解读",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#2b0a30"
+
+
+}

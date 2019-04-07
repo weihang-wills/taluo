@@ -1,0 +1,73 @@
+<!--pages/result/result.wxml-->
+
+<view class='top'>
+  <image class='card' src='{{src}}'/>
+  <view class='topin'>
+    <view class='bigtitle'>{{name}}</view>
+    <view class='biaoqian'>{{biaoqian}}</view>
+  </view>
+</view>
+
+<view class='title'>牌面解释</view>
+
+<view class='back'>
+  <view class='detail'>
+    <text>{{paimian}}</text>
+  </view>
+</view>
+
+<view class='title' wx:if='{{weizhi}}'>正位解释</view>
+<view class='title' wx:else="wx:else">逆位解释</view>
+
+<view class='back'>
+  <view class='detail' wx:if='{{weizhi}}'>
+
+    <text wx:if='{{share}}'>{{jieshi}}</text>
+
+    <view class='father' wx:else="wx:else">
+      <text style='filter: blur(2px)'>{{jieshi}}</text>
+      <view class='mask1'>
+        <text class='sharetext'>分享后即可浏览哦~</text>
+        <button class='imgbutton' open-type="share" bindtap='share'>
+          <image class='img' src='/pages/result/src/button.png'/>
+        </button>
+      </view>
+    </view>
+  </view>
+
+  <view class='detail' wx:else="wx:else">
+
+    <text wx:if='{{share}}'>{{jieshi2}}</text>
+
+    <view class='father' wx:else="wx:else">
+      <text style='filter: blur(2px)'>{{jieshi2}}</text>
+      <view class='mask1'>
+        <text class='sharetext'>分享后即可浏览哦~</text>
+        <button class='imgbutton' open-type="share" bindtap='share'>
+          <image class='img' src='/pages/result/src/button.png'/>
+        </button>
+      </view>
+    </view>
+
+  </view>
+</view>
+
+<view class='title'>两性关系解读</view>
+<view class='back'>
+  <view class='detail'>
+    <text wx:if='{{share}}'>{{liangxing}}</text>
+
+    <view class='father' wx:else="wx:else">
+      <text style='filter: blur(2px)'>{{liangxing}}</text>
+      <view class='mask1'>
+        <text class='sharetext'>分享后即可浏览哦~</text>
+        <button class='imgbutton' open-type="share" bindtap='share'>
+          <image class='img' src='/pages/result/src/button.png'/>
+        </button>
+      </view>
+
+    </view>
+  </view>
+</view>
+
+<official-account></official-account>

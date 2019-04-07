@@ -1,0 +1,125 @@
+/* pages/result/result.wxss */
+
+page{
+  width:750rpx;
+  background: linear-gradient(#2b0a30,#231c1c);
+}
+.top{
+  display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
+  align-items:flex-start;
+
+}
+
+.topin{
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  align-items:flex-start;
+
+}
+.card{
+  width:179rpx;
+  height: 318rpx;
+  margin: 30rpx 0rpx 0rpx 80rpx;
+}
+
+.detail{
+  position: relative;
+  width:690rpx;
+  height: 100%;
+  max-height:500rpx;
+  font-size: 28rpx;
+  color:white;
+  font-family: "方正姚体";
+  margin: 30rpx;
+  padding: 26rpx;
+  overflow:scroll;
+  background: linear-gradient(#601986, #3f1e50);
+  border: 4rpx solid #fff799;
+
+}
+
+
+.mask1{
+
+  width:inherit;
+  height:inherit;
+  background: black;
+  opacity:0.8;
+  position: absolute;
+  left:0px;
+  top:0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.father{
+  width:inherit;
+  height: inherit;
+}
+
+
+.back{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+
+}
+.imgbutton{
+  margin:30rpx;
+  width:200rpx;
+  height: 80rpx;
+  padding: 0rpx;
+  border-radius: 5rpx;
+
+}
+.imgbutton::after{
+  border:none;
+}
+
+.img{
+  width: 200rpx;
+  height: 80rpx;
+
+}
+
+
+.sharetext{
+  margin-top: 20rpx;
+    font-family: "方正姚体";
+    font-size: 32rpx;
+    color:#fff799;
+
+}
+
+.title{
+  margin-top:40rpx;
+  margin-left:30rpx;
+font-family: "方正姚体";
+  font-size: 36rpx;
+  color:#fff799;
+}
+
+.bigtitle{
+  margin:40rpx 30rpx;
+font-family: "方正姚体";
+  font-size: 44rpx;
+  color:#f8d65e;
+}
+
+.biaoqian{
+  margin:30rpx 30rpx;
+font-family: "方正姚体";
+  font-size: 32rpx;
+  color:#f8d65e;
+
+}

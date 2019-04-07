@@ -1,0 +1,22 @@
+<!--index.wxml-->
+
+
+<view class='center'>
+<image class='cards'
+  src='../index/src/cards.png'
+  bindtap='startAnimation'
+  />
+</view>
+
+
+
+<view class='center'>
+<image class='bigcard'
+wx:if="{{pointerevents}}"
+  style='opacity:{{opacity}}'
+  src='../index/src/big_card.png'
+  animation='{{animation}}'
+  bindtap='jump'
+
+  />
+</view>
